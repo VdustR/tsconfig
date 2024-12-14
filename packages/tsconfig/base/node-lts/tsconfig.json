@@ -1,8 +1,8 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "VdustR Node",
+  "display": "VdustR Node LTS",
   "extends": [
-    "@tsconfig/node22/tsconfig",
+    "@tsconfig/node-lts/tsconfig",
     "@tsconfig/strictest/tsconfig",
     "@vp-tw/tsconfig/ext/no-emit/tsconfig",
     "@vp-tw/tsconfig/ext/check-js/tsconfig"

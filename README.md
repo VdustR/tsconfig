@@ -14,16 +14,17 @@ pnpm i -D @vp-tw/tsconfig
 
 ```json
 {
-  "extends": "@vp-tw/tsconfig/base/vite-emotion/tsconfig",
   "compilerOptions": {},
-  "include": [],
-  "exclude": []
+  "exclude": [],
+  "extends": "@vp-tw/tsconfig/base/vite-emotion/tsconfig",
+  "include": []
 }
 ```
 
 - Vite React projects: `@vp-tw/tsconfig/base/vite-react/tsconfig`
 - Vite Emotion React projects: `@vp-tw/tsconfig/base/vite-emotion/tsconfig`
 - Node.js projects(esm/cjs): `@vp-tw/tsconfig/base/node/tsconfig`
+- Node.js LTS projects(esm/cjs): `@vp-tw/tsconfig/base/node-lts/tsconfig`
 - Typescript projects: `@vp-tw/tsconfig/base/bundler/tsconfig`
 
 For other extends utilities, check: <https://github.com/VdustR/tsconfig/tree/main/packages/tsconfig/ext>

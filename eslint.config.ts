@@ -1,61 +1,11 @@
-import antfu from "@antfu/eslint-config";
-import { FlatCompat } from "@eslint/eslintrc";
-import jsdoc from "eslint-plugin-jsdoc";
-import * as mdx from "eslint-plugin-mdx";
-// @ts-expect-error -- no types
-import simpleImportSort from "eslint-plugin-simple-import-sort";
-import tsdoc from "eslint-plugin-tsdoc";
+import { fileURLToPath } from "node:url";
 
-const compat = new FlatCompat();
+import { includeIgnoreFile } from "@eslint/compat";
+import { vdustr } from "@repo/eslint";
+import path from "pathe";
 
-export default antfu(
-  {
-    react: true,
-    stylistic: false,
-    jsonc: false,
-    yaml: false,
-    toml: false,
-    markdown: false,
-  },
-  ...compat.config({
-    extends: [
-      "plugin:@typescript-eslint/strict",
-      "plugin:prettier/recommended",
-    ],
-  }),
-  {
-    ...jsdoc.configs["flat/recommended"],
-    plugins: {},
-    files: ["**/*.cjs", "**/*.js", "**/*.jsx"],
-  },
-  {
-    files: ["**/*.ts", "**/*.tsx"],
-    plugins: {
-      tsdoc,
-    },
-    rules: {
-      "tsdoc/syntax": "warn",
-    },
-  },
-  {
-    files: ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"],
-    plugins: {
-      "simple-import-sort": simpleImportSort,
-    },
-    rules: {
-      "import/order": "off",
-      "simple-import-sort/imports": "error",
-      "simple-import-sort/exports": "error",
-    },
-  },
-  {
-    ...mdx.flat,
-    processor: mdx.createRemarkProcessor({
-      lintCodeBlocks: true,
-      languageMapper: {},
-    }),
-  },
-  {
-    ...mdx.flatCodeBlocks,
-  },
-);
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const prettierignorePath = path.resolve(__dirname, ".prettierignore");
+
+export default vdustr(includeIgnoreFile(prettierignorePath));

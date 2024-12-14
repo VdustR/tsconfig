@@ -1,9 +1,9 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
-    "declaration": false,
+    "declaration": true,
     "emitDeclarationOnly": false,
-    "noEmit": true
+    "noEmit": false
   },
-  "display": "VdustR No Emit"
+  "display": "VdustR Emit"
 }

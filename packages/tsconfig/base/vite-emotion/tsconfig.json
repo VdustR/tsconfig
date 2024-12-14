@@ -1,9 +1,9 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": ["@vp-tw/tsconfig/base/vite-react/tsconfig"],
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "@emotion/react"
   },
-  "display": "VdustR Vite Emotion",
-  "extends": ["@vp-tw/tsconfig/base/vite-react/tsconfig"]
+  "display": "VdustR Vite Emotion"
 }
