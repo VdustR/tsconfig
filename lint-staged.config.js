@@ -1,14 +1,14 @@
 import process from "node:process";
 
-const isFormat = process.env["TYPE"] === "format";
+const isFormat = process.env.TYPE === "format";
 
 /**
- * @type {import('lint-staged').Config}
+ * @type {import('lint-staged').Configuration}
  */
 const config = isFormat
   ? {
       "**/*": [
-        "eslint --report-unused-disable-directives --fix --max-warnings=0 --no-error-on-unmatched-pattern --no-warn-ignored --flag unstable_ts_config",
+        "eslint --report-unused-disable-directives --fix --max-warnings=0 --no-error-on-unmatched-pattern --no-warn-ignored",
         "prettier --ignore-unknown --write",
       ],
     }

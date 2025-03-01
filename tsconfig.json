@@ -1,4 +1,4 @@
 {
   "extends": ["@vp-tw/tsconfig/base/bundler/tsconfig"],
-  "include": ["*.config.*", "*.d.ts"]
+  "include": ["./*"]
 }

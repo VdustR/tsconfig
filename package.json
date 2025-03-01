@@ -1,47 +1,47 @@
 {
   "name": "@repo/root",
-  "type": "module",
+  "version": "0.0.0-auto-generated",
   "private": true,
-  "packageManager": "pnpm@9.15.0+sha512.76e2379760a4328ec4415815bcd6628dee727af3779aaa4c914e3944156c4299921a89f976381ee107d41f12cfa4b66681ca9c718f0668fa0831ed4c6d8ba56c",
-  "engines": {
-    "node": ">=22",
-    "pnpm": ">=9"
-  },
+  "type": "module",
   "scripts": {
     "build": "pnpm run --filter @repo/build build",
     "commit": "cz",
     "dev": "pnpm run --filter @repo/build dev",
     "lint:cspell": "cspell --no-summary --no-progress",
-    "lint:es": "eslint . --fix --report-unused-disable-directives --max-warnings 0 --flag unstable_ts_config",
+    "lint:es": "eslint . --fix --report-unused-disable-directives --max-warnings 0",
     "lint:prettier": "prettier --ignore-unknown --write .",
     "prepare": "husky"
   },
   "dependencies": {
-    "@types/lodash": "^4.17.13",
-    "jiti": "^2.4.1",
-    "lodash": "^4.17.21",
-    "pathe": "^1.1.2"
+    "pathe": "^2.0.3"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^3.12.0",
-    "@commitlint/cli": "^19.6.0",
-    "@commitlint/config-conventional": "^19.6.0",
+    "@antfu/eslint-config": "^4.3.0",
+    "@commitlint/cli": "^19.7.1",
+    "@commitlint/config-conventional": "^19.7.1",
     "@commitlint/types": "^19.5.0",
-    "@eslint/compat": "^1.2.4",
-    "@repo/eslint": "workspace:*",
+    "@eslint/compat": "^1.2.7",
     "@total-typescript/ts-reset": "^0.6.1",
     "@types/lint-staged": "^13.3.0",
-    "@types/node": "^22.10.2",
+    "@types/node": "^22.13.7",
+    "@vp-tw/eslint-config": "^0.0.25",
     "@vp-tw/tsconfig": "workspace:*",
     "commitizen": "^4.3.1",
-    "cspell": "^8.16.1",
-    "eslint": "^9.17.0",
-    "eslint-config-prettier": "^9.1.0",
+    "cspell": "^8.17.5",
+    "eslint": "^9.21.0",
+    "eslint-config-prettier": "^10.0.2",
     "eslint-plugin-mdx": "^3.1.5",
-    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-package-json": "^0.26.0",
+    "eslint-plugin-prettier": "^5.2.3",
     "husky": "^9.1.7",
-    "lint-staged": "^15.2.11",
-    "prettier": "^3.4.2",
-    "typescript": "^5.7.2"
+    "jiti": "^2.4.2",
+    "lint-staged": "^15.4.3",
+    "prettier": "^3.5.2",
+    "typescript": "^5.8.2"
+  },
+  "packageManager": "pnpm@9.15.0+sha512.76e2379760a4328ec4415815bcd6628dee727af3779aaa4c914e3944156c4299921a89f976381ee107d41f12cfa4b66681ca9c718f0668fa0831ed4c6d8ba56c",
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=9"
   }
 }
