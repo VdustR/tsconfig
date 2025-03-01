@@ -4,7 +4,8 @@
   "type": "module",
   "dependencies": {
     "@tsconfig/node-lts": "^22.0.1",
-    "@tsconfig/node22": "^22.0.0",
+    "@tsconfig/node-ts": "^23.6.0",
+    "@tsconfig/node23": "^23.0.0",
     "@tsconfig/strictest": "^2.0.5",
     "@tsconfig/vite-react": "^3.4.0"
   }
