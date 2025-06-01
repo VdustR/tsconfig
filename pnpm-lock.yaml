@@ -4,97 +4,181 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+catalogs:
+  default:
+    '@antfu/eslint-config':
+      specifier: ^4.3.0
+      version: 4.3.0
+    '@commitlint/cli':
+      specifier: ^19.7.1
+      version: 19.7.1
+    '@commitlint/config-conventional':
+      specifier: ^19.7.1
+      version: 19.7.1
+    '@commitlint/types':
+      specifier: ^19.5.0
+      version: 19.5.0
+    '@eslint/compat':
+      specifier: ^1.2.7
+      version: 1.2.7
+    '@total-typescript/ts-reset':
+      specifier: ^0.6.1
+      version: 0.6.1
+    '@tsconfig/node-lts':
+      specifier: ^22.0.1
+      version: 22.0.1
+    '@tsconfig/node-ts':
+      specifier: ^23.6.0
+      version: 23.6.0
+    '@tsconfig/node23':
+      specifier: ^23.0.0
+      version: 23.0.0
+    '@tsconfig/strictest':
+      specifier: ^2.0.5
+      version: 2.0.5
+    '@tsconfig/vite-react':
+      specifier: ^3.4.0
+      version: 3.4.0
+    '@types/lint-staged':
+      specifier: ^13.3.0
+      version: 13.3.0
+    '@types/node':
+      specifier: ^22.13.7
+      version: 22.13.7
+    '@vp-tw/eslint-config':
+      specifier: ^0.0.25
+      version: 0.0.25
+    commitizen:
+      specifier: ^4.3.1
+      version: 4.3.1
+    cspell:
+      specifier: ^8.17.5
+      version: 8.17.5
+    eslint:
+      specifier: ^9.21.0
+      version: 9.21.0
+    eslint-config-prettier:
+      specifier: ^10.0.2
+      version: 10.0.2
+    eslint-plugin-mdx:
+      specifier: ^3.1.5
+      version: 3.1.5
+    eslint-plugin-package-json:
+      specifier: ^0.26.0
+      version: 0.26.0
+    eslint-plugin-prettier:
+      specifier: ^5.2.3
+      version: 5.2.3
+    husky:
+      specifier: ^9.1.7
+      version: 9.1.7
+    jiti:
+      specifier: ^2.4.2
+      version: 2.4.2
+    lint-staged:
+      specifier: ^15.4.3
+      version: 15.4.3
+    pathe:
+      specifier: ^2.0.3
+      version: 2.0.3
+    prettier:
+      specifier: ^3.5.2
+      version: 3.5.2
+    typescript:
+      specifier: ^5.8.2
+      version: 5.8.2
+
 importers:
 
   .:
     dependencies:
       pathe:
-        specifier: ^2.0.3
+        specifier: 'catalog:'
         version: 2.0.3
     devDependencies:
       '@antfu/eslint-config':
-        specifier: ^4.3.0
+        specifier: 'catalog:'
         version: 4.3.0(@typescript-eslint/utils@8.25.0(eslint@9.21.0(jiti@2.4.2))(typescript@5.8.2))(@vue/compiler-sfc@3.5.13)(eslint@9.21.0(jiti@2.4.2))(typescript@5.8.2)
       '@commitlint/cli':
-        specifier: ^19.7.1
+        specifier: 'catalog:'
         version: 19.7.1(@types/node@22.13.7)(typescript@5.8.2)
       '@commitlint/config-conventional':
-        specifier: ^19.7.1
+        specifier: 'catalog:'
         version: 19.7.1
       '@commitlint/types':
-        specifier: ^19.5.0
+        specifier: 'catalog:'
         version: 19.5.0
       '@eslint/compat':
-        specifier: ^1.2.7
+        specifier: 'catalog:'
         version: 1.2.7(eslint@9.21.0(jiti@2.4.2))
       '@total-typescript/ts-reset':
-        specifier: ^0.6.1
+        specifier: 'catalog:'
         version: 0.6.1
       '@types/lint-staged':
-        specifier: ^13.3.0
+        specifier: 'catalog:'
         version: 13.3.0
       '@types/node':
-        specifier: ^22.13.7
+        specifier: 'catalog:'
         version: 22.13.7
       '@vp-tw/eslint-config':
-        specifier: ^0.0.25
+        specifier: 'catalog:'
         version: 0.0.25(@antfu/eslint-config@4.3.0(@typescript-eslint/utils@8.25.0(eslint@9.21.0(jiti@2.4.2))(typescript@5.8.2))(@vue/compiler-sfc@3.5.13)(eslint@9.21.0(jiti@2.4.2))(typescript@5.8.2))(eslint-config-prettier@10.0.2(eslint@9.21.0(jiti@2.4.2)))(eslint-plugin-mdx@3.1.5(eslint@9.21.0(jiti@2.4.2)))(eslint-plugin-package-json@0.26.0(@types/estree@1.0.6)(eslint@9.21.0(jiti@2.4.2))(jsonc-eslint-parser@2.4.0))(eslint@9.21.0(jiti@2.4.2))
       '@vp-tw/tsconfig':
         specifier: workspace:*
         version: link:packages/tsconfig
       commitizen:
-        specifier: ^4.3.1
+        specifier: 'catalog:'
         version: 4.3.1(@types/node@22.13.7)(typescript@5.8.2)
       cspell:
-        specifier: ^8.17.5
+        specifier: 'catalog:'
         version: 8.17.5
       eslint:
-        specifier: ^9.21.0
+        specifier: 'catalog:'
         version: 9.21.0(jiti@2.4.2)
       eslint-config-prettier:
-        specifier: ^10.0.2
+        specifier: 'catalog:'
         version: 10.0.2(eslint@9.21.0(jiti@2.4.2))
       eslint-plugin-mdx:
-        specifier: ^3.1.5
+        specifier: 'catalog:'
         version: 3.1.5(eslint@9.21.0(jiti@2.4.2))
       eslint-plugin-package-json:
-        specifier: ^0.26.0
+        specifier: 'catalog:'
         version: 0.26.0(@types/estree@1.0.6)(eslint@9.21.0(jiti@2.4.2))(jsonc-eslint-parser@2.4.0)
       eslint-plugin-prettier:
-        specifier: ^5.2.3
+        specifier: 'catalog:'
         version: 5.2.3(@types/eslint@9.6.1)(eslint-config-prettier@10.0.2(eslint@9.21.0(jiti@2.4.2)))(eslint@9.21.0(jiti@2.4.2))(prettier@3.5.2)
       husky:
-        specifier: ^9.1.7
+        specifier: 'catalog:'
         version: 9.1.7
       jiti:
-        specifier: ^2.4.2
+        specifier: 'catalog:'
         version: 2.4.2
       lint-staged:
-        specifier: ^15.4.3
+        specifier: 'catalog:'
         version: 15.4.3
       prettier:
-        specifier: ^3.5.2
+        specifier: 'catalog:'
         version: 3.5.2
       typescript:
-        specifier: ^5.8.2
+        specifier: 'catalog:'
         version: 5.8.2
 
   packages/tsconfig:
     dependencies:
       '@tsconfig/node-lts':
-        specifier: ^22.0.1
+        specifier: 'catalog:'
         version: 22.0.1
       '@tsconfig/node-ts':
-        specifier: ^23.6.0
+        specifier: 'catalog:'
         version: 23.6.0
       '@tsconfig/node23':
-        specifier: ^23.0.0
+        specifier: 'catalog:'
         version: 23.0.0
       '@tsconfig/strictest':
-        specifier: ^2.0.5
+        specifier: 'catalog:'
         version: 2.0.5
       '@tsconfig/vite-react':
-        specifier: ^3.4.0
+        specifier: 'catalog:'
         version: 3.4.0
 
 packages:
