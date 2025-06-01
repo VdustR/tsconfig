@@ -9,5 +9,8 @@
     "@tsconfig/node23": "catalog:",
     "@tsconfig/strictest": "catalog:",
     "@tsconfig/vite-react": "catalog:"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
