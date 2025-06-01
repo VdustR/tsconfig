@@ -6,8 +6,11 @@
   "ignorePaths": [
     "**/*.svg",
     "**/__snapshots__/**",
+    "**/CHANGELOG.md",
+    "**/LICENSE",
     ".*ignore",
     "/*.code-workspace",
+    "/.changeset",
     "/.git",
     "/packages/app/.env.*.local",
     "/packages/app/.env.local",
@@ -26,6 +29,7 @@
     "nvmrc",
     "pathe",
     "tsdoc",
+    "unrs",
     "vite",
     "zustand"
   ]

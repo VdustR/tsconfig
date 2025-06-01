@@ -1,6 +1,7 @@
 {
   "name": "@vp-tw/tsconfig",
-  "version": "0.0.0-auto-generated",
+  "version": "3.1.0",
+  "description": "Common tsconfig presets collection",
   "type": "module",
   "dependencies": {
     "@tsconfig/node-lts": "catalog:",
