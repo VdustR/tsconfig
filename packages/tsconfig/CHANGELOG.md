@@ -1,5 +1,11 @@
 # @vp-tw/tsconfig
 
+## 3.2.0
+
+### Minor Changes
+
+- 7f25227: chore: update deps
+
 ## 3.1.2
 
 ### Patch Changes
