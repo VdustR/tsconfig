@@ -1,5 +1,11 @@
 # @vp-tw/tsconfig
 
+## 3.2.1
+
+### Patch Changes
+
+- 2b009e3: fix nvmrc
+
 ## 3.2.0
 
 ### Minor Changes
