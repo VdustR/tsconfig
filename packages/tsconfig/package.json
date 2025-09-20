@@ -2,6 +2,26 @@
   "name": "@vp-tw/tsconfig",
   "version": "3.1.2",
   "description": "Common tsconfig presets collection",
+  "keywords": [
+    "tsconfig",
+    "typescript",
+    "preset",
+    "config",
+    "node",
+    "react",
+    "vite",
+    "emotion"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vp-tw/tsconfig.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "ViPro",
+    "email": "vdustr@gmail.com",
+    "url": "http://vdustr.dev"
+  },
   "type": "module",
   "dependencies": {
     "@tsconfig/node-lts": "catalog:",
